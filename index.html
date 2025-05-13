@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9379559305.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS-->
+    <link href="css/global.css" rel="stylesheet" />
+    <style>
+        /* Ajustes para responsividad móvil */
+        #navbar-logo, #footer-logo {
+          max-height: 40px;
+          width: auto;
+        }
+        .carousel-caption {
+          background: rgba(0, 0, 0, 0.7);
+          padding: 10px;
+          border-radius: 8px;
+        }
+        .gallery-item {
+          cursor: pointer;
+        }
+        .modal-img, .modal-video {
+          max-width: 100%;
+          height: auto;
+        }
+        /* Ajustes específicos para móviles */
+        @media (max-width: 767px) {
+          .navbar-nav {
+            text-align: center;
+            padding: 10px 0;
+          }
+          .carousel-caption {
+            display: block !important; /* Mostrar captions en móviles */
+            padding: 8px;
+          }
+          .carousel-caption h5 {
+            font-size: 1.2rem;
+          }
+          .carousel-caption p {
+            font-size: 0.8rem;
+            line-height: 1.3;
+          }
+          .container-xl {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .row.gx-4 {
+            margin-left: -10px;
+            margin-right: -10px;
+          }
+          .row.gx-4 > .col-md-4 {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .main-timeline .card {
+            margin: 0 10px;
+          }
+          footer .fs-1 {
+            font-size: 1.5rem !important;
+          }
+        }
+        /* Estilo para la línea de tiempo */
+        .main-timeline {
+          position: relative;
+        }
+        .main-timeline::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 4px;
+          background: #f0ad4e;
+          left: 50%;
+          margin-left: -2px;
+        }
+        .timeline {
+          position: relative;
+          margin: 20px 0;
+        }
+        @media (max-width: 767px) {
+          .main-timeline::before {
+            left: 10px;
+          }
+          .timeline.left .card, .timeline.right .card {
+            margin-left: 25px;
+            margin-right: 15px;
+          }
+        }
+      </style>
+    <title>LaIslabtc24.org</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0" class="mt-6">
+
+        <!-- Responsive navbar-->
+        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark text-light">
+            <div class="container-xl px-5">
+                <a class="navbar-brand" href="#"><img src="img/logo-laislabtc-minimalista.jpg" alt="" id="navbar-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <!--li class="nav-item"><a class="nav-link" href="#scrollspytools">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspybuy">Compra BTC</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="#scrollspynevents">POW</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspydonaciones">Dona</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#scrollspynews">Noticias</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="#scrollspymedia">Multimedia</a></li>
+                        <!--li class="nav-item"><a class="nav-link" href="#scrollspynostr-anchor">Conecta</a></li-->
+                        <li class="nav-item"><a class="nav-link" href="#scrollspycontact">Contacto</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      
+        <!-- Carusel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active drk">
+                <img src="img/meetup_21_12_24.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-bolder text-uppercase">La IslaBTC</h5>
+                    <p class="lead">Comunidad enfocada en el debate y aprendizaje sobre Bitcoin, surge a partir de la educacion de la Comunidad Cuba Bitcoin. A través de cursos y encuentros presenciales en La Isla de la Juventud, para ayudar a que más personas conozcan y utilicen bitcoin e incentivar el logro de una economía circular.</p>
+                </div>
+                </div>
+                <div class="carousel-item drk">
+                <img src="img/meetup_21_12_24_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-bolder text-uppercase">La IslaBTC</h5>
+                    <p class="lead">Comunidad enfocada en el debate y aprendizaje sobre Bitcoin, surge a partir de la educacion de la Comunidad Cuba Bitcoin. A través de cursos y encuentros presenciales en La Isla de la Juventud, para ayudar a que más personas conozcan y utilicen bitcoin e incentivar el logro de una economía circular.</p>
+                </div>
+                </div>
+                <div class="carousel-item drk">
+                <img src="img/centro_bitcoin2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="display-6 fw-bolder text-uppercase">La IslaBTC</h5>
+                    <p class="lead">Comunidad enfocada en el debate y aprendizaje sobre Bitcoin, surge a partir de la educacion de la Comunidad Cuba Bitcoin. A través de cursos y encuentros presenciales en La Isla de la Jventud, para ayudar a que más personas conozcan y utilicen bitcoin e incentivar el logro de una economía circular.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    
+        
+        <!-- Noticias
+        <section id="scrollspynews" class="py-5">
+            <div class="container-xl px-5">
+                <h1 class="text-center fw-bolder display-6 mb-5">NOTICIAS</h1>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/cuba-bitcoin-580x330.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">Noticias</div>
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">Legislación</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!"><div class="h4 card-title mb-3">Entran hoy en vigor normativas del Banco Central de Cuba que regulan uso de criptomonedas</div></a>
+                                <p class="card-text text-muted">Este miércoles entra en vigor la Resolución 215/2021, del Banco Central de Cuba (BCC), normativa que regula el uso de los criptoactivos para transacciones de carácter comercial en y desde la Isla, además de la concesión de licencias asociadas a operaciones</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/cubabitcoin.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">CubaBitcoin</div>
+                                            <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/genialrz.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">Noticias</div>
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">My First Bitcoin</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!"><div class="h4 card-title mb-3">La 4ta edición de My First Bitcoin My First Bitcoin en Cuba ya está aquí</div></a>
+                                <p class="card-text text-muted">Si estás en La Habana o Sancti Spíritus y quieres aprender sobre #Bitcoin aprovecha esta oportunidad. Para participar rellena el formulario:</p>
+                                <p class="card-text text-muted"> https://forms.gle/PxSpYe9s9MNfpMYM6</p>
+                                <p class="card-text text-muted"> El curso tiene un nivel básico... </p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/cubabitcoin.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">CubaBitcoin</div>
+                                            <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="img/trezoraca.jpg" alt="..." />
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">Noticias</div>
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-3">Trezor Academy Cuba</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!"><div class="h4 card-title mb-3">Realizada la primera edición de la Trezor Academy en Sancti Spiritus</div></a>
+                                <p class="card-text text-muted">Por primera vez se realiza este espacio educativo auspiciado por Trezor en Cuba. </p>
+                                <p class="card-text text-muted"> Los encuentros se realizaron durante 3 sábados concecutivos los días 16, 23 y 30 de noviembre.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="img/cubabitcoin.jpg" alt="..." />
+                                        <div class="small">
+                                            <div class="fw-bold">CubaBitcoin</div>
+                                            <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        -->
+
+
+        <!-- Servicios comunitarios 
+        <section class="py-5 bg-light" id="scrollspytools">
+            <div class="container-xl px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder display-6 text-uppercase">Servicios comunitarios</h2>
+                    <p class="text-muted">Herramientas al servicio de la comunidad para facilitar el uso de Bitcoin en Cuba mediante soluciones libres, soberanas y accesibles para todos.</p>
+                </div>
+
+                <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center text-center">
+
+                    <div class="col mb-5">
+                        <a href="https://lnbits.cubabitcoin.org" target="_blank" class="text-decoration-none">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body">
+                                    <img src="img/lnbits_logo_letters_black.svg" alt="LNbits logo" style="height: 64px; width: 60%;" class="mb-3">
+                                    <h5 class="fw-bolder link-dark">LNbits</h5>
+                                    <p class="text-muted">Billetera Lightning extensible para aceptar pagos y crear subcuentas.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col mb-5">
+                        <a href="https://btcpay.cubabitcoin.org" target="_blank" class="text-decoration-none">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body">
+                                    <img src="img/btcpay_logo_transparente.png" alt="BTCPay logo" style="height: 64px;" class="mb-3">
+                                    <h5 class="fw-bolder link-dark">BTCPay Server</h5>
+                                    <p class="text-muted">Crea tu tienda, acepta pagos en Bitcoin y crea tus campañas de recaudación.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col mb-5">
+                        <a href="https://cuba-bitcoin.github.io/tutoriales/" target="_blank" class="text-decoration-none">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body">
+                                    <img src="img/tutoriales_transparente.png" alt="Tutoriales logo" style="height: 64px;" class="mb-3">
+                                    <h5 class="fw-bolder link-dark">Tutoriales</h5>
+                                    <p class="text-muted">Guías prácticas para aprender sobre Bitcoin y usar estas herramientas.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col mb-5">
+                        <a href="https://mint.cubabitcoin.org" target="_blank" class="text-decoration-none">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body">
+                                    <img src="img/cashu_pixel_cuba_cleaned.png" alt="Cashu logo" style="height: 64px;" class="mb-3">
+                                    <h5 class="fw-bolder link-dark">Mint de Cashu</h5>
+                                    <p class="text-muted">Envía y recibe ecash privado, incluso sin conexión a internet.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- Estilos hover personalizados -->
+        <style>
+            .card:hover {
+                background-color: #f0f0f0;
+                transition: background-color 0.3s ease;
+                cursor: pointer;
+            }
+
+            .card:hover .link-dark {
+                color: #007bff; /* Azul */
+            }
+        </style>
+        <!-- end section -->
+
+        <!-- Compra BTC sin KYC section
+
+        <section class="py-4 bg-light">
+            <div id="scrollspybuy" style="position: relative; top: -100px;"></div>
+            <div class="container-xl px-5 my-2">
+                <div class="text-center">
+                    <h2 class="fw-bolder display-6 mb-5 text-uppercase">Compra Bitcoin sin KYC</h2>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                    
+                <!-- Cuba LNp2p primero 
+                <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="text-center">
+                        <a href="https://t.me/CUBA_lnp2p" target="_blank" class="text-decoration-none">
+                            <img class="img-fluid rounded-circle mb-4 border shadow" src="img/cuba_lnp2p.png" alt="..." />
+                            <h5 class="fw-bolder link-dark">Cuba LNp2p</h5>
+                            <div class="fst-italic text-muted">Comunidad cubana del bot LNp2p en Telegram </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Mostro después
+                <div class="col mb-5 mb-5 mb-xl-0">
+                    <div class="text-center">
+                        <a href="https://mostro.network/" target="_blank" class="text-decoration-none">
+                            <img class="img-fluid rounded-circle mb-4 border shadow" src="img/mostro.png" alt="..." />
+                            <h5 class="fw-bolder link-dark">Mostro</h5>
+                            <div class="fst-italic text-muted">Plataforma de intercambio entre pares sobre Nostr usando Lightning Network</div>
+                        </a>
+                    </div>
+                </div>
+                    
+                    <!--
+                    <div class="col mb-5 mb-5 mb-sm-0">
+                        <div class="text-center">
+                            <a href="https://learn.robosats.com/" target="_blank" class="text-decoration-none">
+                                <img class="img-fluid rounded-circle mb-4 border shadow" src="img/robosats.jpg" alt="..." />
+                                <h5 class="fw-bolder link-dark">Robosats</h5>
+                                <div class="fst-italic text-muted">Una forma sencilla y privada de intercambiar bitcoins por monedas nacionales</div>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="col mb-5">
+                        <div class="text-center">
+                            <a href="https://hodlhodl.com/" target="_blank" class="text-decoration-none">
+                                <img class="img-fluid rounded-circle mb-4 border shadow" src="img/hodl-hodl.jpg" alt="..." />
+                                <h5 class="fw-bolder link-dark">Hodl Hodl</h5>
+                                <div class="fst-italic text-muted">Plataforma global de comercio P2P de Bitcoin</div>
+                            </a>
+
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        
+        <!-- POW section -->
+        <section class="py-5 bg-light" id="scrollspynevents">
+            <div class="container-xl px-5 my-5">
+
+                <div class="row justify-content-center">
+
+                    <h2 class="fw-bolder display-6 mb-5 text-center">Proof of Work</h2>
+                    <h3 class="fw-bold text-uppercase text-center mt-2 mb-4">Impacto de la Comunidad</h3>
+
+                    <p class="lead text-center mb-4" style="color: #3a3a3a;">
+                        Nuestro trabajo no se mide en palabras, sino en acciones. Este es el resultado del esfuerzo colectivo.
+                    </p>
+
+                    <section class="py-5 bg-white">
+                        <div class="container-xl px-5 my-5">
+                        <div class="row text-center g-4">
+                    
+                            <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-mortarboard fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">21</h4>
+                                <p class="text-muted small fst-italic">Graduados de cursos de Bitcoin en La Isla de la Juventud</p>
+                              </div>
+
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-globe fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">48</h4>
+                                <p class="text-muted small fst-italic">Personas que forman parte de nuestra comunidad</p>
+                              </div>
+                              
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-people fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">7</h4>
+                                <p class="text-muted small fst-italic">Encuentros educativos organizados por la comunidad en 6 meses de creada</p>
+                              </div>
+                              
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-shop fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">3</h4>
+                                <p class="text-muted small fst-italic">Negocios que aceptan Bitcoin en Cuba, antes de la comunidad era 0</p>
+                              </div>
+
+                          <!--
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-hammer fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">6</h4>
+                                <p class="text-muted small fst-italic">Herramientas soberanas activas para el uso de Bitcoin</p>
+                              </div>
+                            -->  
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-pc-display-horizontal fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">2</h4>
+                                <p class="text-muted small fst-italic">Negocios usando BTCPay Server en La Isla de la Juventud</p>
+                              </div>
+                            <!--  
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-person-video3 fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">9</h4>
+                                <p class="text-muted small fst-italic">Profesores cubanos formados en educación sobre Bitcoin</p>
+                              </div>
+
+                                                      
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-geo-alt fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">4</h4>
+                                <p class="text-muted small fst-italic">Provincias con eventos presenciales realizados</p>
+                              </div>
+                              
+                              <div class="col-md-4 col-lg-4">
+                                <i class="bi bi-calendar3 fs-1 text-warning"></i>
+                                <h4 class="fw-bold mt-2">3</h4>
+                                <p class="text-muted small fst-italic">Años promoviendo el uso de Bitcoin en Cuba y el mundo</p>
+                              </div>
+                          -->                                 
+                    
+                        </div>
+                        </div>
+                    </section>
+
+                    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#timelineCollapse" aria-expanded="false" aria-controls="timelineCollapse">
+                        📜 Ver historial completo de eventos
+                    </button>
+                
+                    <div class="collapse" id="timelineCollapse">
+
+                        <div class="main-timeline">
+                       <!-- <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - NOVIEMBRE </h3>
+                                <p class="text-uppercase">Evento Trezor Academy en la proviencia de Sancti Spiritus </p>
+                                <p class="text-muted">El evento se realizó los días 16, 23 y 30 de noviembre, en donde se graduaron 12 estudiantes de diversas edades.</p>
+
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - SEPTIEMBRE</h3>
+                                <p class="text-uppercase">Participación en Watch Out, Bitcoin! en Madrid </p>
+                                <p class="text-muted"><strong>Panel:</strong> ECONOMÍAS EMERGENTES: BITCOIN, INFLACIÓN, REMESAS, ACCESO GLOBAL.</p>
+                                <p class="text-muted"><strong>Ponentes:</strong> <br>
+                                    - @Catry_a y @Forte11 de Cuba Bitcoin <br>
+                                    - Ernesto de EscuelitaBTC <br>
+                                    - Gabriel Kurman <br>
+                                    - Javier Bastardo <br>
+                                    - Kico Pascual <br>
+                                    - Marta Soler <br>
+                                    <strong>Moderado: </strong>Lorena Ortiz                         
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - AGOSTO </h3>
+                                <p class="text-uppercase">Cuarta Graduación en Cuba del Diplomado My First Bitcoin </p>
+                                <p class="text-muted">Se graduaron un total de 19 estudiantes.</p>
+
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - JULIO</h3>
+                                <p class="text-uppercase">Cuarta Edición del Diplomado de My First Bitcoin en Cuba </p>
+                                <p class="text-muted">Por primera vez se realizó el diplomado en la modalidad online y se contó con estudiantes cubanos y de otros países cómo Estados Unidos, Nicaragua, Venezuela y México.</p>
+                                <p class="text-muted">Se invitó a impartir clases a graduados de ediciones anteriores del Diplomado.</p>
+                                <p class="text-muted"><strong>Los profesores fueron:</strong> Catry_a, Forte11, Frank, Bitalion, Hhobbitt y Jacalfonso</p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2023 - MARZO </h3>
+                                <p class="text-uppercase">Tercera Graduación en Cuba del Diplomado My First Bitcoin </p>
+                                <p class="text-muted">Se graduaron un total de 21 estudiantes. En Sancti Spíritus, 9 y en La Habana, 13.</p>
+
+                            </div>
+                            </div>
+                        </div>
+                    -->
+
+
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                               <h3>2025 - 27 DE ABRIL</h3>
+                               <p class="text-uppercase">Evento Blockstream Local </p>
+                               <p class="text-muted"><strong>Profesor:</strong> Bitalion (Profesor y coofundador de la comunidad Cuba Bitcoin) </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2025 - ABRIL</h3>
+                                <p class="text-uppercase">Evento Trezor Academy </p>
+                                <p class="text-muted">El evento se realizó los días 25, 26 y 27 de abril, donde se graduaron 8 estudiantes de diversas edades.</p>
+                                <p class="text-muted"><strong>Profesor:</strong> Bitalion (Profesor y coofundador de la comunidad Cuba Bitcoin) </p>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2025 - 02 DE MARZO</h3>
+                                <p class="text-uppercase">Meetup con comerciantes locales. </p>
+                                <p class="text-muted">Desarrollado en el Centro Bitcoin de la comunidad La IslaBTC. Dirigido a personas y comerciantes locales de Nueva Gerona, Isla de la Juventud. </p>
+                                <p class="text-muted">Fue un encuentro único. El tema principal fue: ¿ A favor o en contra de Bitcoin ?</p>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2025 - 20 DE FEBRERO</h3>
+                                <p class="text-uppercase">Proyección del documental: INCONFISCABLE de Adrián Bernabéu </p>
+                                <p class="text-muted"> Proyección exclusiva para la comunidad La IslaBTC, en el Centro Bitcoin de la comunidad, gracias al autor del documental y la gestión de la comunidad Cuba Bitcoin. </p>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2025 - 16 de ENERO</h3>
+                                <p class="text-uppercase">Proyección del documental Revolución Bitcoin: el nuevo paradigma</p>
+                                <p class="text-muted">Documental firmado en 2021 y estrenado el 3 de Enero de 2025 </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - 21 de DICIEMBRE</h3>
+                                <p class="text-uppercase">¡Primer Meetup Bitcoin Only Presencial y graduación del Primer Curso Cubano de Bitcoin!</p>
+                                <p class="text-muted">Este fue el primer evento Bitcoin Only en La Isla de la Juventud.</p>
+                                <p class="text-muted">¡Los 8 graduados del Primer Curso Cubano de Bitcoin realizaron un panel basado en el Tweet de BTCAndres describiendo cosas que Bitcoin les enseñó!</p>
+                                <p class="text-muted">Se realizó en el Bar-Restaurant Villa Choly, Isla de la Juventud, Cuba</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="timeline right">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - 18 de NOVIEMBRE</h3>
+                                <p class="text-uppercase">Primer Curso Basico Cubano de Bitcoin</p>
+                                <p class="text-muted">Programa educativo creado en su totalidad por la Comunidad Cuba Bitcoin </p>
+                                <p class="text-muted">Curso totalmente gratis que contó con 5 encuentros, los lunes de 06:00 PM a 08:00 PM, en el Bar-Restaurant Villa Choly, NUeva Gerona, Isla de la Juventud, Cuba </p>
+                                <p class="text-muted"><strong>Profesor:</strong> BTCLNAT (graduado de la Cuarta edición del Diplomado MFB)  </p>
+                                <p class="text-muted"><strong>Temas tratados:</strong><br>
+                                    
+                                        1) Dinero <br>
+                                        2) Bitcoin Onchain. Billeteras Bitcoin <br>
+                                        3) Bitcoin Lightning. Billeteras LN <br>
+                                        4) Comprar Bitcoin sin KYC. Mostro y lnp2p <br>
+                                        5) Uso de Bitcoin en la vida diaria. Economía Circular </p>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline left">
+                            <div class="card">
+                            <div class="card-body p-4">
+                                <h3>2024 - 16 DE DICIEMBRE</h3>
+                                <p class="text-uppercase">Creación de la comunidad La IslaBTC. Bloque 870629</p>
+                                <p class="text-muted"><strong>Se crea como comunidad presencial con el fin de iniciar la educación en La Isla de la Juventud</strong></p>
+                                <p class="text-muted"><br>
+                                    Surge a partir de una propuesta de la Comunidad Cuba Bitcoin para extender la educacion y la adopcion de Bitcoin.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </section>
+        <!-- end section -->
+
+        <!-- Donaciones / Apoya la comunidad -->
+        <section class="py-5 bg-dark text-light" id="scrollspydonaciones">
+            <div class="container-xl px-5 my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                <h2 class="fw-bolder display-6 text-uppercase text-center">Apoya la comunidad</h2>
+                <p class="lead text-center mt-3">
+                    Si valoras nuestro trabajo educativo y comunitario, puedes contribuir con una donación.
+                    Todo se gestiona a través de nuestro <strong>BTCPay Server</strong>, sin intermediarios.
+                </p>
+        
+                <div class="d-flex justify-content-center mt-4 mb-4">
+                    <a class="btn btn-warning btn-lg px-5 py-3 fw-bold fs-5" href="https://btcpay.cubabitcoin.org/apps/gFigCZS1YmwZbLUw6MYEuYANUJp/crowdfund" target="_blank">
+                        Donar
+                    </a>
+                </div>
+        
+                <div class="text-light fs-5">
+                    <p>Tu donación nos ayuda a:</p>
+                    <ul>
+                      <li>Organizar eventos y espacios de formación gratuitos.</li>
+                      <li>Mantener nuestros servicios: LNbits, BTCPay Server, Cashu Mint y nodo Lightning.</li>
+                      <li>Desarrollar herramientas para la comunidad.</li>
+                      <li>Crear tutoriales y guías educativas.</li>
+                      <li>Llevar Bitcoin a toda Cuba.</li>
+                    </ul>
+                    <p class="mt-3">Con tu apoyo, seguimos sembrando libertad financiera y empoderando a más personas.</p>
+                    <p class="fst-italic text-light">¡Gracias por ser parte de este movimiento!</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+
+<!-- Multimedia section -->
+<section class="py-5 bg-dark text-light" id="scrollspymedia">
+    <div class="container-xl px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-12 text-center mb-4">
+                <h2 class="fw-bolder display-6">MULTIMEDIA</h2>
+                <p class="fw-normal mb-0">Fotos y videos de las actividades de la comunidad</p>
+            </div>
+        </div>
+        <!-- Galería de fotos -->
+        <div class="row gx-4">
+            <!-- Grupo 1: Primer Curso Cubano de Bitcoin -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                    {"type":"image","src":"img/curso_cuban0_clase1.jpg","description":"Primer Curso Básico Cubano de Bitcoin, clase inicial en el Bar-Restaurant Villa Choly."},
+                    {"type":"image","src":"img/curso_cubano_clase2.jpg","description":"Primer Curso Básico Cubano de Bitcoin, clase inicial en el Bar-Restaurant Villa Choly."}
+                ]'>
+                    <img src="img/curso_cuban0_clase1.jpg" class="card-img-top" alt="Clase de curso 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de Bitcoin</h5>
+                        <p class="card-text">Clase inicial en Villa Choly.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Grupo 2: Primer Meetup Bitcoin -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                    {"type":"image","src":"img/meetup_21_12_24.jpg","description":"Primer Meetup Bitcoin Only en La Isla de la Juventud, con panel de graduados."},
+                    {"type":"image","src":"img/meetup_21_12_24_2.jpg","description":"Momento del panel de discusión en el Meetup Bitcoin Only del 21 de diciembre de 2024."}
+                ]'>
+                    <img src="img/meetup_21_12_24.jpg" class="card-img-top" alt="Meetup 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Meetup Bitcoin</h5>
+                        <p class="card-text">Primer evento Bitcoin Only. Graduación del Primer Curso Cubano de Bitcoin</p>
+                    </div>
+                </div>
+            </div>
+                   <!-- Grupo 3: Centro Bitcoin -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                        {"type":"image","src":"img/centro_bitcoin1.jpg","description":"Ubicado en Calle 24 #5506. Nueva Gerona."},
+                        {"type":"image","src":"img/centro_bitcoin2.jpg","description":"En un intercambio sobre P2P sin KYC. Terraza del Centro."},
+                        {"type":"image","src":"img/centro_bitcoin3.jpg","description":"Conversando de Bitcoin despues de una limpieza del centro."},
+                        {"type":"image","src":"img/centro_bitcoin4.jpg","description":"Limpiando nuestro Centro para embellecer."},
+                        {"type":"image","src":"img/centro_bitcoin5.jpg","description":"Todos enfrazcados en limoieza y preparación del Centro."}
+                    ]'>
+                        <img src="img/centro_bitcoin1.jpg" class="card-img-top" alt="Centro Bitcoin">
+                        <div class="card-body">
+                            <h5 class="card-title">Centro Bitcoin</h5>
+                            <p class="card-text">Centro Bitcoin de La IslaBTC</p>
+                    </div>
+                </div>
+            </div>
+                <!-- Grupo 4: Documental Revolucion -->
+           <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                {"type":"image","src":"img/revolucion_bitcoin1.jpg"},
+                {"type":"image","src":"img/revolucion_bitcoin2.jpg"}
+            ]'>
+                <img src="img/revolucion_bitcoin1.jpg" class="card-img-top" alt="Documental Revolucion">
+                <div class="card-body">
+                    <h5 class="card-title">Revolución Bitcoin: un nuevo paradigma</h5>
+                    <p class="card-text">Proyección del documental en el Cetro Bitcoin de la comunidad</p>
+                </div>
+            </div>
+        </div>
+           <!-- Grupo 5: Documental Incosfiscable -->
+           <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                {"type":"image","src":"img/inconfiscable1.jpg"},
+                {"type":"image","src":"img/inconfiscable2.jpg"}
+            ]'>
+                <img src="img/inconfiscable1.jpg" class="card-img-top" alt="Documental Incosfiscable">
+                <div class="card-body">
+                    <h5 class="card-title">INCONFISCABLE</h5>
+                    <p class="card-text">Proyección del documental INCONFISCABLE gracia a Adrian Bernabeu, autor del documental. Exclusivo para nuestra comunidad</p>
+                </div>
+            </div>
+        </div>
+           <!-- Grupo 6: Meetup con Comerciantes -->
+           <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                {"type":"image","src":"img/meetup_comerciantes1.jpg"},
+                {"type":"image","src":"img/meetup_comerciantes2.jpg"},
+                {"type":"image","src":"img/meetup_comerciantes3.jpg"},
+                {"type":"image","src":"img/meetup_comerciantes4.jpg"}
+            ]'>
+                <img src="img/meetup_comerciantes1.jpg" class="card-img-top" alt="Meetup comerciantes">
+                <div class="card-body">
+                    <h5 class="card-title">Meetup Comerciantes</h5>
+                    <p class="card-text">Meetup con comerciantes locales y miembros de la comunidad. Gracias a VivaBitcoin</p>
+                </div>
+            </div>
+        </div>
+           <!-- Grupo 7: Trezor Academy -->
+           <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                {"type":"image","src":"img/trezor4.jpg","description":"Bitalion, coofundador de Cuba Bitcoin impartiendo una clase magistral."},
+                {"type":"image","src":"img/trezor3.jpg"},
+                {"type":"image","src":"img/trezor1.jpg"},
+                {"type":"image","src":"img/trezor2.jpg"}
+            ]'>
+                <img src="img/trezor4.jpg" class="card-img-top" alt="Trezor">
+                <div class="card-body">
+                    <h5 class="card-title">Trezor Academy</h5>
+                    <p class="card-text">Segundo Evento Trezor Academy en Cuba. Primera vez en la Isla de la Juventud</p>
+                </div>
+            </div>
+        </div>
+           <!-- Grupo 8: Blockstream Local
+           <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light gallery-item" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[
+                {"type":"image","src":"img/meetup_21_12_24.jpg","description":"Primer Meetup Bitcoin Only en La Isla de la Juventud, con panel de graduados."},
+                {"type":"image","src":"img/meetup_21_12_24_2.jpg","description":"Momento del panel de discusión en el Meetup Bitcoin Only del 21 de diciembre de 2024."}
+            ]'>
+                <img src="img/meetup_21_12_24.jpg" class="card-img-top" alt="Meetup 1">
+                <div class="card-body">
+                    <h5 class="card-title">Meetup Bitcoin</h5>
+                    <p class="card-text">Primer evento Bitcoin Only. Graduación del Primer Curso Cubano de Bitcoin</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Listas de botones por grupo -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h6 class="fw-bold mb-3 text-center">Explora más multimedia por evento:</h6>
+                <div class="row">
+                    <!-- Grupo 1: Cursos de Bitcoin >
+                    <div class="col-md-6 mb-4">
+                        <h6 class="fw-bold text-warning">Cursos de Bitcoin</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"image","src":"img/curso_cuban0_clase1.jpg","description":"Primer Curso Básico Cubano de Bitcoin, clase inicial en el Bar-Restaurant Villa Choly."}]'>
+                                    Foto: Primer Curso Cubano de Bitcoin Clase Inicial
+                                </button>
+                            </li>
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"image","src":"img/curso_cubano_clase2.jpg","description":"Primer Curso Básico Cubano de Bitcoin, clase inicial en el Bar-Restaurant Villa Choly."}]'>
+                                    Foto: Primer Curso Cubano de Bitcoin Clase 2
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grupo 2: Meetup Bitcoin 
+                    <div class="col-md-6 mb-4">
+                        <h6 class="fw-bold text-warning">Meetup Bitcoin</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"image","src":"img/meetup_21_12_24.jpg","description":"Primer Meetup Bitcoin Only en La Isla de la Juventud, con panel de graduados."}]'>
+                                    Foto: Panel de Discusión
+                                </button>
+                            </li>
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"image","src":"img/meetup_21_12_24_2.jpg","description":"Entrega de Certificados de Graduados del Curso Cubano de Bitcoin."}]'>
+                                    Foto: Entrega de Certificados a los Graduados.
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                   <!-- Grupo 7: Centro Bitcoin 
+                   <div class="col-md-6 mb-4">
+                    <h6 class="fw-bold text-warning"> Centro Bitcoin La IslaBTC</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"text","description":"Contenido multimedia no disponible para este evento."}]'>
+                                Multimedia no disponible
+                            </button>
+                        </li>
+                    </ul>
+                </div>                    
+                    <!-- Grupo 3: Proyección del Documental 
+                    <div class="col-md-6 mb-4">
+                        <h6 class="fw-bold text-warning">Proyección Documental</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"image","src":"img/revolucion_bitcoin.jpg","description":"Revolución Bitcoin: el nuevo paradigma."}]'>
+                                    Documental Revolución Bitcoin
+                                </button>
+                            </li>
+                        </ul>
+                    </div>                     
+                     <!-- Grupo 6: Eventos >
+                    <div class="col-md-6 mb-4">
+                        <h6 class="fw-bold text-warning">Evenetos</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"text","description":"Contenido multimedia no disponible para este evento."}]'>
+                                    Multimedia no disponible
+                                </button>
+                            </li>
+                        </ul>
+                    </div> 
+                   <!-- Grupo 4: Videos -->
+                   <div class="col-md-6 mb-4">
+                    <h6 class="fw-bold text-warning">Videos</h6>
+                    <ul class="list-unstyled">
+                        <!--li class="mb-2">
+                            <button class="btn btn-outline-light btn-sm gallery-item w-100 text-start" data-bs-toggle="modal" data-bs-target="#mediaModal" data-group='[{"type":"text","description":"Contenido multimedia no disponible para este evento."}]'>
+                                Multimedia no disponible
+                            </button>
+                        </li -->
+                        <li class="mb-2">
+                            <a href="https://youtube.com/shorts/dLROcRrxKbc" target="_blank" class="btn btn-outline-light btn-sm gallery-item w-100 text-start">
+                                Video: Sesión 3: Billeteras Lightning (YouTube)
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal para visualizar contenido -->
+<div class="modal fade" id="mediaModal" tabindex="-1" aria-labelledby="mediaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediaModalLabel">Multimedia</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div id="modalContent"></div>
+                <p id="modalDescription" class="mt-3"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS y script personalizado -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const mediaModal = document.getElementById('mediaModal');
+    mediaModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const group = JSON.parse(button.getAttribute('data-group'));
+        const modalContent = mediaModal.querySelector('#modalContent');
+        const modalDescription = mediaModal.querySelector('#modalDescription');
+
+        // Crear carrusel dinámico o mostrar texto
+        let carouselItems = '';
+        group.forEach((item, index) => {
+            const activeClass = index === 0 ? 'active' : '';
+            if (item.type === 'image') {
+                carouselItems += `
+                    <div class="carousel-item ${activeClass}">
+                        <img src="${item.src}" class="d-block w-100 modal-img" alt="Media">
+                    </div>`;
+            } else if (item.type === 'video') {
+                carouselItems += `
+                    <div class="carousel-item ${activeClass}">
+                        <video controls class="d-block w-100 modal-video">
+                            <source src="${item.src}" type="video/mp4">
+                        </video>
+                    </div>`;
+            } else if (item.type === 'text') {
+                carouselItems = `<p>${item.description}</p>`;
+            }
+        });
+
+        if (group[0].type === 'text') {
+            modalContent.innerHTML = carouselItems;
+        } else {
+            modalContent.innerHTML = `
+                <div id="mediaCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        ${carouselItems}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>`;
+        }
+
+        // Actualizar descripción dinámicamente al cambiar de slide
+        if (group[0].type !== 'text') {
+            const carousel = modalContent.querySelector('#mediaCarousel');
+            carousel.addEventListener('slid.bs.carousel', function (e) {
+                const activeIndex = e.to;
+                modalDescription.textContent = group[activeIndex].description;
+            });
+        }
+
+        // Establecer descripción inicial
+        modalDescription.textContent = group[0].description;
+    });
+</script>
+<style>
+    .modal-img, .modal-video {
+        max-width: 100%;
+        height: auto;
+    }
+    .carousel-item video {
+        max-height: 400px;
+        margin: auto;
+    }
+    @media (max-width: 767px) {
+        .modal-img, .modal-video {
+            max-height: 300px;
+        }
+        .carousel-item video {
+            max-height: 300px;
+        }
+    }
+    .list-unstyled .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+</style>
+        
+
+        <!-- Jade Wallet section
+        <section class="py-5 bg-dark text-light">
+            <div class="container-xl px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0 opacity-75" src="img/jade.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h4 class="fw-bolder mb-0 text-uppercase">Distribuidor oficial </h4>
+                        <p class="fw-normal display-6 mb-4 text-success">Blockstream Jade.</p>
+                        <p class="mb-5">
+                            <span class="fw-bolder fs-5 text-success">01</span> LANZAMIENTO: 2021 <br>
+                            <span class="fw-bolder fs-5 text-success">02</span> INTERFACES: QR Code, USB-C, Bluetooth <br>
+                            <span class="fw-bolder fs-5 text-success">03</span> BATERÍA: SÍ <br>
+                            <span class="fw-bolder fs-5 text-success">04</span> ELEMENTO SEGURO: Virtual Secure Element <br>
+                            <span class="fw-bolder fs-5 text-success">05</span> OPEN SOURCE: Hardware & Software <br>
+                            <span class="fw-bolder fs-5 text-success">06</span> APP: GREEN (DESKTOP, IOS, ANDROID) <br>
+                            <span class="fw-bolder fs-5 text-success">07</span> CERTIFICACIÓN: CC EAL5+ <br>
+                            <span class="fw-bolder fs-5 text-success">08</span> FEATURES: Air-gapped <br>
+                            <span class="fw-bolder fs-5 text-success">09</span> PRECIO: $67 USD
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-success btn px-2 me-sm-2" href="https://t.me/Forte11" target="_blank">Compra desde Cuba</a>
+                            <a class="btn btn-outline-light btn px-2" href="https://store.blockstream.com/?code=cubabitcoin" target="_blank">Compra desde cualquier parte del mundo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Nostr Directory Section -->
+        <div id="scrollspynostr-anchor" style="position: relative; top: -100px;"></div>
+        <section class="py-5 bg-light" id="scrollspynostr">
+
+            <div class="container-xl px-5">
+              <div class="row align-items-center">
+                
+                <!-- Texto a la izquierda
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h2 class="fw-bolder display-6 text-uppercase text-center mb-5">Conecta con La IslaBTC en Nostr</h2>
+                    <p class="lead text-muted mb-4 text-md-center">
+                       <!-- Sigue a los miembros de la comunidad en Nostr.
+                    </p>
+                    <p class="lead text-muted mb-4 text-md-center">
+
+                  <a href="https://following.space/d/sk342g0nwqbt" class="btn btn-dark btn-lg mb-3" target="_blank" rel="noopener noreferrer">
+                    Ver directorio
+                  </a>
+                 <!-- <p class="text-muted mt-3 text-md-center">
+                    ¿Quieres apoyar aún más? Obtén tu identidad <code>nip05</code> con el dominio <strong><em>@cubabitcoin.org</em></strong> y forma parte de la red.
+                    <br>
+                    <p class="lead text-muted mb-4 text-md-center">
+
+                    <a href="https://btcpay.cubabitcoin.org/apps/gFigCZS1YmwZbLUw6MYEuYANUJp/crowdfund" class="btn btn-outline-dark btn-sm mt-2" target="_blank" rel="noopener noreferrer">
+                      Obtener NIP05 personalizado
+                    </a>
+                  </p>
+                </div>
+              
+                <!-- Imagen a la derecha 
+                <div class="col-md-6 text-center">
+                  <img src="img/Designer.png" alt="Nostr La IslaBTC" class="img-fluid rounded shadow-sm" style="max-width: 300px;">
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- end section -->
+          
+          
+
+        <!-- Frases section-->
+        <div class="py-5 bg-light text-muted">
+            <div class="container-xl px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-10 col-xl-7">
+                        <div class="text-center">
+                            <div class="fs-4 mb-4 fst-italic">“Con dinero electrónico basado en evidencia criptográfica, sin la necesidad de depender de intermediarios externos, el dinero puede estar seguro y las transacciones sin esfuerzo”</div>
+                            <div class="d-flex align-items-center justify-content-center">
+        
+                                <i class="fs-3 fa-brands fa-bitcoin rounded-circle me-3"></i>
+                                <div class="fw-bold">
+                                    Satoshi Nakamoto 
+                                    <span class="fw-bold mx-1">/</span>
+                                    Creador de Bitcoin
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Footer section-->
+        <footer class="py-5 bg-dark" id="scrollspycontact">
+            <div class="container-xl py-5">
+                <div class="text-center mb-5 mb-xl-0">
+                    <div class="mb-2 text-light">
+                        <img src="img/logo-laislabtc-minimalista.jpg" alt="" id="footer-logo" class="mb-2">
+                        <p>Comunidad comprometida con la educación sobre Bitcoin en La Isla de la Juventud.</p>
+
+                        <hr class="hr my-5" />
+
+                        <p class="mb-0">Accede a contenido 100% gratuito.</p>
+                        <p>Únete a nuestra comunidades</p>
+                        <a class="fs-1 px-2 link-light" href="https://x.com/laislabtc24" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a class="fs-1 px-2 link-light" href="https://t.me/laislabtc" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a class="fs-1 px-2 link-light" href="https://primal.net/p/nprofile1qqsfywjnhye3k3efz0ggheq2wt7r3vq7l8gq5rucdau36vua7x37m6qsxsr5x" target="_blank"><img src="img/nostr_logo_blk.svg" alt="" id="nostr-social" class="bg-white rounded-circle"></i></a>
+                        <!--<a class="fs-1 px-2 link-light" href="https://www.youtube.com/watch?v=vgFhIK59Adg&list=PLUwwW7RQ2X7ZnFA5DHfb76khLtvzBmx3A&t=1s" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="fs-1 px-2 link-light" href="https://getalby.com/p/bitcoincuba" target="_blank"><i class="fa-brands fa-bitcoin"></i></a>-->
+                       
+                        <p class="mt-5">© 2025 laislabtc.org. Promoviendo la educación y el uso de Bitcoin en La Isla de la Juventud </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
