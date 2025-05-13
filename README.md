@@ -1,2 +1,2 @@
-# cubabitcoin.org
-Sitio de la comunidad CubaBitcoin
+# laislabtc.org
+Sitio de la comunidad La IslaBTC
