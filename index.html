@@ -104,6 +104,15 @@
         }
         .card {
           overflow: hidden; /* Evita desbordamiento de la imagen */
+          height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+          display: flex;
+          flex-direction: column;
+        }
+        .card-body {
+          flex-grow: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio disponible */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
         /* Ajustes para los textos de las tarjetas */
         .card-title {
@@ -113,6 +122,7 @@
         .card-text {
           font-size: 0.9rem; /* Tamaño reducido para el texto */
           line-height: 1.4;
+          flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
         }
         /* Ajustes para pantallas pequeñas */
         @media (max-width: 767px) {
@@ -219,12 +229,12 @@
                             </div>
                             <div class="col-md-4 col-lg-4">
                                 <i class="bi bi-shop fs-1 text-warning"></i>
-                                <h4 class="fw-bold mt-2">3</h4>
-                                <p class="text-muted small fst-italic">Negocios que aceptan Bitcoin en Cuba, antes de la comunidad era 0</p>
+                                <h4 class="fw-bold mt-2">4</h4>
+                                <p class="text-muted small fst-italic">Negocios que aceptan Bitcoin en La Isla de la Juventud, antes de la comunidad era 0</p>
                             </div>
                             <div class="col-md-4 col-lg-4">
                                 <i class="bi bi-pc-display-horizontal fs-1 text-warning"></i>
-                                <h4 class="fw-bold mt-2">2</h4>
+                                <h4 class="fw-bold mt-2">3</h4>
                                 <p class="text-muted small fst-italic">Negocios usando BTCPay Server en La Isla de la Juventud</p>
                             </div>
                         </div>
@@ -369,23 +379,37 @@
                 <!-- Lista de negocios -->
                 <div class="row gx-4">
                     <!-- Negocio 1: MercaIsla -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 col-lg-3 mb-4">
                         <div class="card bg-light text-dark">
                             <img src="img/taza_bitcoin.jpg" class="card-img-top gallery-image" alt="MercaIsla">
                             <div class="card-body">
                                 <h5 class="card-title">MercaIsla</h5>
-                                <p class="card-text">Venta de productos cerámicos y remesas en CUP y MLC a través de su subnegocio Envíos Relámpagos.</p>
+                                <p class="card-text">Venta de productos cerámicos en La Isla de la Juventud.</p>
                                 <p class="card-text">
                                     <strong>Ubicación:</strong> <a href="https://btcmap.org/merchant/node:12038510350" target="_blank" class="btn btn-outline-dark btn-sm">Ver en BTCMap</a><br>
                                     <strong>BTCPay Server:</strong><br>
-                                    <a href="https://btcpay.cubabitcoin.org/apps/4B52fEEYSLiQ3pAwFSDLMhFqY3wf/pos" target="_blank" class="btn btn-outline-dark btn-sm mt-1">Envíos Relámpagos</a><br>
-                                    <a href="https://btcpay.cubabitcoin.org/apps/27EURMKvPUgEVeKLn83MsJ9fmgD/pos" target="_blank" class="btn btn-outline-dark btn-sm mt-1">MercaIsla</a>
+                                    <a href="https://btcpay.cubabitcoin.org/apps/27EURMKvPUgEVeKLn83MsJ9fmgD/pos" target="_blank" class="btn btn-outline-dark btn-sm mt-1">Pagar con Bitcoin</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Negocio 2: El Luky Ta Loko -->
-                    <div class="col-md-4 mb-4">
+                    <!-- Negocio 2: Envíos Relámpagos -->
+                    <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="card bg-light text-dark">
+                            <img src="img/envios_relampagos.png" class="card-img-top gallery-image" alt="Envíos Relámpagos">
+                            <div class="card-body">
+                                <h5 class="card-title">Envíos Relámpagos</h5>
+                                <p class="card-text">Servicio de remesas en CUP y MLC.</p>
+                                <p class="card-text">
+                                    <strong>BTCPay Server:</strong><br>
+                                    <a href="https://btcpay.cubabitcoin.org/apps/4B52fEEYSLiQ3pAwFSDLMhFqY3wf/pos" target="_blank" class="btn btn-outline-dark btn-sm mt-1">Remesas en CUP</a>,
+                                    <a href="https://btcpay.cubabitcoin.org/apps/4LJAQRPvmdcBqdm9fPe74JKuV9J4/pos" target="_blank" class="btn btn-outline-dark btn-sm mt-1">Remesas en MLC</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Negocio 3: El Luky Ta Loko -->
+                    <div class="col-md-4 col-lg-3 mb-4">
                         <div class="card bg-light text-dark">
                             <img src="img/luky-ta-1.jpg" class="card-img-top gallery-image" alt="El Luky Ta Loko">
                             <div class="card-body">
@@ -399,8 +423,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Negocio 3: Villa Choly -->
-                    <div class="col-md-4 mb-4">
+                    <!-- Negocio 4: Villa Choly -->
+                    <div class="col-md-4 col-lg-3 mb-4">
                         <div class="card bg-light text-dark">
                             <img src="img/villa_choly.jpg" class="card-img-top gallery-image" alt="Villa Choly">
                             <div class="card-body">
